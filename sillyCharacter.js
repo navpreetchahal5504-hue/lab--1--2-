@@ -56,25 +56,31 @@ function generateCharacter() {
     // Random age
     age = Math.floor(Math.random() *80) + 10;
 
-    //Random power
+    // Random power
     let randomPower =
     specialPowers[Math.floor(Math.random() *specialPowers.length)];
     
-   //Funny description
-   let randomPower = `Meet ${characterName}, a ${age}-year-old ${
+   // Funny description
+   let description = `Meet ${characterName}, a ${age}-year-old ${
         isSuperhero ? "superhero" : "troublemaker"
     } who loves ${favoriteFood} and ${randomPower}!`;
 
-   //Display description
-   document.querySelector("#charactorDescription").textContent =
+   // Display description
+   document.querySelector("#characterDescription").textContent =
        description;
     
 }
 
 // Functions to update character's age
+function increaseAge() {
+    age++;
+    generateCharacter();
+}
 
-
-
+function decreaseAge() {
+    age--;
+    generateCharacter();
+}
 
 // Function to update the character's description after changing age
 
