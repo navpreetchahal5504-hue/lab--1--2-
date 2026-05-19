@@ -78,7 +78,10 @@ function increaseAge() {
 }
 
 function decreaseAge() {
+    if (age > 1) {
     age--;
+    }
+   
     updateDescription();
 }
 
@@ -97,3 +100,14 @@ function updateDescription() {
 
 // Add event listeners for buttons using querySelector
 
+document
+    .querySelector("#generateButton")
+    .addEventListener("click", generateCharacter);
+
+document
+    .querySelector("#increaseAgeButton")
+    .addEventListener("click", increaseAge);
+
+document
+    .querySelector("#decreaseAgeButton")
+    .addEventListener("click", decreaseAge);
