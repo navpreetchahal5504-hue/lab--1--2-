@@ -8,6 +8,7 @@ The user can also customize some aspects like updating the character's name or a
 Project Breakdown:
 Declare, Initialize, and Update Variables:
 
+
 You’ll create variables to store different character attributes 
 (name, age, favorite food, etc.).
 Users will have the option to update some of these variables, like 
@@ -33,6 +34,18 @@ display the character's attributes in a creative and humorous way.
 */
 
 // Declare and initialize variables
+
+let characterName = "Captain Waffles";
+let age = 25;
+let isSuperhero = true;
+let favoriteFood = "Pizza";
+
+let specialPowers = [
+    "can fly faster than light",
+    "shoots spagetti from hands",
+    "talks to squireels",
+    "turns homework into cookies"
+];
 
 
 
